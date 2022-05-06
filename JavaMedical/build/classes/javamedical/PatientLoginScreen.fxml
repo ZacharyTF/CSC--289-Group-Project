@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javamedical.PatientLoginScreenController">
+   <left>
+      <StackPane prefHeight="150.0" prefWidth="230.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/javamedical.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="100.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Label text="Patient Portal" textFill="#3474bc">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="75.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #3474bc;" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="enterpassword" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="150.0" onAction="#patientLogin" prefHeight="30.0" prefWidth="170.0" promptText="Password">
+               <StackPane.margin>
+                  <Insets top="30.0" />
+               </StackPane.margin>
+            </PasswordField>
+            <Label fx:id="loginstatus" alignment="CENTER" contentDisplay="CENTER" prefHeight="21.0" prefWidth="188.0" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="85.0" />
+               </StackPane.margin>
+            </Label>
+            <Label text="Enter Login Information:" textFill="WHITE">
+               <StackPane.margin>
+                  <Insets bottom="150.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="homescreen" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#homeScreen" prefHeight="35.0" prefWidth="35.0" style="-fx-background-size: 100% 100%; -fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/homebuttonwhite.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <StackPane.margin>
+                  <Insets top="325.0" />
+               </StackPane.margin>
+            </Button>
+            <Button fx:id="register" mnemonicParsing="false" onAction="#patientRegister" prefHeight="30.0" prefWidth="130.0" text="Register">
+               <StackPane.margin>
+                  <Insets top="230.0" />
+               </StackPane.margin>
+            </Button>
+            <Button fx:id="login" defaultButton="true" mnemonicParsing="false" onAction="#patientLogin" prefHeight="30.0" prefWidth="130.0" text="Login">
+               <StackPane.margin>
+                  <Insets top="155.0" />
+               </StackPane.margin>
+            </Button>
+            <TextField fx:id="enterusername" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="150.0" prefHeight="30.0" prefWidth="170.0" promptText="Username/E-Mail">
+               <StackPane.margin>
+                  <Insets bottom="50.0" />
+               </StackPane.margin>
+            </TextField>
+            <ImageView fitHeight="72.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/whitelock.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="250.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

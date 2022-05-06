@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javamedical.PatientRegistryController">
+   <left>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Patient Registry" textFill="#3474bc">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="50.0" />
+               </StackPane.margin>
+            </Label>
+            <ImageView fitHeight="50.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+               <image>
+                  <Image url="@images/javamedical.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets top="125.0" />
+               </StackPane.margin>
+            </ImageView>
+         </children>
+      </StackPane>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #3474bc;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="firstname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="First Name">
+               <StackPane.margin>
+                  <Insets bottom="150.0" right="200.0" />
+               </StackPane.margin>
+            </TextField>
+            <TextField fx:id="lastname" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Last Name">
+               <StackPane.margin>
+                  <Insets bottom="150.0" left="200.0" />
+               </StackPane.margin>
+            </TextField>
+            <TextField fx:id="username" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Username">
+               <StackPane.margin>
+                  <Insets bottom="80.0" right="200.0" />
+               </StackPane.margin>
+            </TextField>
+            <PasswordField fx:id="password" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Password">
+               <StackPane.margin>
+                  <Insets bottom="10.0" right="200.0" />
+               </StackPane.margin>
+            </PasswordField>
+            <TextField fx:id="emailAddress" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Email Address">
+               <StackPane.margin>
+                  <Insets right="200.0" top="60.0" />
+               </StackPane.margin>
+            </TextField>
+            <PasswordField fx:id="ssNumber" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Social Security Number">
+               <StackPane.margin>
+                  <Insets left="200.0" top="60.0" />
+               </StackPane.margin>
+            </PasswordField>
+            <Label text="Enter Patient Information:" textFill="WHITE" StackPane.alignment="TOP_CENTER">
+               <StackPane.margin>
+                  <Insets top="75.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="homescreen" mnemonicParsing="false" onAction="#homeScreen" prefHeight="35.0" prefWidth="35.0" style="-fx-background-size: 100% 100%; -fx-background-color: transparent;" StackPane.alignment="BOTTOM_CENTER">
+               <graphic>
+                  <ImageView fx:id="homeicon" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/homebuttonwhite.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <StackPane.margin>
+                  <Insets bottom="25.0" />
+               </StackPane.margin>
+            </Button>
+            <Button fx:id="register" defaultButton="true" mnemonicParsing="false" onAction="#patientRegister" prefHeight="30.0" prefWidth="130.0" text="Register" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="75.0" />
+               </StackPane.margin>
+            </Button>
+            <TextField fx:id="phoneNumber" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Phone Number">
+               <StackPane.margin>
+                  <Insets right="200.0" top="130.0" />
+               </StackPane.margin>
+            </TextField>
+            <TextField fx:id="dateOfBirth" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Date of Birth">
+               <StackPane.margin>
+                  <Insets left="200.0" top="130.0" />
+               </StackPane.margin>
+            </TextField>
+            <Label fx:id="statuslabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="350.0" textAlignment="CENTER" textFill="WHITE" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="110.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordConfirm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Confirm Password">
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="200.0" />
+               </StackPane.margin>
+            </PasswordField>
+            <ComboBox fx:id="genderComboBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="190.0" promptText="Gender/Sex">
+               <StackPane.margin>
+                  <Insets bottom="80.0" left="200.0" />
+               </StackPane.margin>
+            </ComboBox>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

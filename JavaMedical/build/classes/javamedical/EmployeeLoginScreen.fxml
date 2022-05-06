@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javamedical.EmployeeLoginScreenController">
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #703d18;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="loginstatus" alignment="CENTER" prefHeight="21.0" prefWidth="220.0" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="135.0" />
+               </StackPane.margin>
+            </Label>
+            <Label fx:id="enterinfolabel" text="Enter Login Information:" textFill="WHITE">
+               <StackPane.margin>
+                  <Insets bottom="100.0" />
+               </StackPane.margin>
+            </Label>
+            <Button fx:id="loginbutton" defaultButton="true" mnemonicParsing="false" onAction="#employeeLogin" prefHeight="30.0" prefWidth="130.0" text="Login">
+               <StackPane.margin>
+                  <Insets top="200.0" />
+               </StackPane.margin>
+            </Button>
+            <TextField fx:id="enterusername" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="170.0" onAction="#employeeLogin" prefHeight="30.0" prefWidth="170.0" promptText="Username/E-Mail" />
+            <ImageView fitHeight="72.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/whitelock.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets bottom="200.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Button fx:id="homebutton" contentDisplay="CENTER" mnemonicParsing="false" onAction="#homeScreen" style="-fx-background-size: 100% 100%;; -fx-background-color: transparent;" textAlignment="JUSTIFY" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="homeicon1" fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/homebuttonwhite.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <StackPane.margin>
+                  <Insets top="300.0" />
+               </StackPane.margin>
+            </Button>
+            <PasswordField fx:id="enterpassword" maxHeight="30.0" maxWidth="200.0" minHeight="30.0" minWidth="150.0" onAction="#employeeLogin" prefHeight="30.0" prefWidth="170.0" promptText="Password">
+               <StackPane.margin>
+                  <Insets top="80.0" />
+               </StackPane.margin>
+            </PasswordField>
+         </children>
+      </StackPane>
+   </center>
+   <left>
+      <StackPane prefHeight="150.0" prefWidth="228.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/javamedical.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets top="-100.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Label text="Employee Portal" textFill="#703d18">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="75.0" />
+               </StackPane.margin>
+            </Label>
+         </children>
+      </StackPane>
+   </left>
+</BorderPane>
